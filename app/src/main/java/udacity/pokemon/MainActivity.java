@@ -15,9 +15,12 @@
  */
 package udacity.pokemon;
 
+import android.support.v7.app.AppCompatActivity;
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
@@ -51,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         new GetPokemon().execute();
     }
 
-    private Object findViewById(int list) {
+    public View findViewById(int list) {
+        return null;
     }
 
     private class GetPokemon extends AsyncTask<Void, Void, Void> {
